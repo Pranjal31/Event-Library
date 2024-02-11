@@ -1,3 +1,6 @@
+#ifndef EVENT_H
+#define EVENT_H
+
 #define NUM_ITERATIONS 1000
 #define LOWER_BOUND 500
 #define UPPER_BOUND 2000
@@ -14,3 +17,5 @@ struct event_handler {
 
 void register_event_callbacks(void(*clt_evt1_cb)(int), void(*clt_evt2_cb)(int));
 void event_loop();
+
+#endif // EVENT_H
