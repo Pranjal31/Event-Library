@@ -12,7 +12,7 @@ This is a simple event library written in C that allows users to register callba
 
 Compile the program using the following command:
 
-`gcc main.c event.c -o program`
+`cd src; make`
 
 Run the compiled program:
 
