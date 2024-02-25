@@ -19,7 +19,7 @@ void event_loop() {
         // generate random number in RANGE
         rand_num = rand()%RANGE + LOWER_BOUND;
 
-        printf("event_loop: generated rand_num_%d = %d\n", idx, rand_num);
+        printf("event_loop: generated rand_num_%d, secret = %d\n", idx, rand_num);
         switch (EVT_CONDITION)
         {
         case EVT_1_CASE:
