@@ -4,7 +4,7 @@ CC = gcc
 # compiler flags
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = main.c event.c
+SRCS = main.c event.c client.c
 
 # object files
 OBJS = $(SRCS:.c=.o)
@@ -22,6 +22,9 @@ main.o: main.c
 
 event.o: event.h event.c
 	$(CC) $(CFLAGS) -c event.c
+
+client.o: client.h client.c
+	$(CC) $(CFLAGS) -c client.c
 
 clean:
 	rm -f $(OBJS) $(TARGET)
